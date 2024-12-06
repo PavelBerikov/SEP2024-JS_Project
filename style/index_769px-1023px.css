@@ -1,0 +1,39 @@
+@media (min-width: 769px) and (max-width: 1023px){
+    .addValue input{
+        width: 70vw;
+        height: 5vh;
+        font-size: 40px;
+        background: bisque;
+        margin-left: 50px;
+    }
+    #addButton{
+        height: 5vh;
+        width: 100px;
+        margin: 30px;
+        border-radius: 5px;
+        font-size: 30px;
+    }
+    #list{
+        width: 80vw;
+        height: 30vh;
+        background: bisque;
+        overflow: auto;
+        font-size: 40px;
+        margin-left: -40px;
+    }
+    .wrapper{
+        flex-direction: column;
+    }
+    .buttonDiv{
+        display: flex;
+        width: 80vw;
+        margin-left: -40px;
+    }
+    #deleter{
+        margin-left: auto;
+    }
+    .sort{
+        height: 4vh;
+        font-size: 20px;
+    }
+}

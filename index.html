@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SEP_2024:JS - Project</title>
+    <link rel="stylesheet" href="style/index_min_width-1024px.css">
+    <link rel="stylesheet" href="style/index.css">
+    <link rel="stylesheet" href="style/index_769px-1023px.css">
+    <link rel="stylesheet" href="style/index_max_width-768px.css">
+</head>
+<body>
+<form class="addValue">
+    <label for="add">Name : Value</label>
+    <input type="text" class="border" id="add" name="addValue" pattern="^[a-zA-Zа-яА-Я0-9 ]+=[ ]*[a-zA-Zа-яА-Я0-9]+[a-zA-Zа-яА-Я0-9 ]*$" required>
+    <button type="submit" id="addButton">Add</button>
+</form>
+<div class="wrapper">
+    <div class="border" id="list"></div>
+    <div class="buttonDiv">
+        <button class="sort" id="sortName">Sort by Name</button>
+        <button class="sort" id="sortValue">Sort by Value</button>
+        <button class="sort" id="deleter">Delete</button>
+        <button class="sort" id="instruction">Instruction</button>
+    </div>
+</div>
+<section class="txt">
+    <div class="shadow" id="container">
+        <div class="inform border" id="ua">
+            Використовуйте цей додаток для додавання, видалення та сортування даних у форматі ‘ключ = значення’.
+            Ви можете вводити дані кирилицею, латиницею або цифрами. Між ключем і значенням обов’язково має бути
+            знак рівності (=). Щоб виділити елемент для видалення, натисніть на нього — він підсвітиться синім
+            кольором. Після цього натисніть кнопку “Delete”, щоб видалити всі підсвічені елементи.
+            <br/>
+            <button class="switch" id="engSwitch">eng</button>
+        </div>
+        <div class="inform shadow border" id="eng">
+            Use this application to add, delete, and sort data in the format ‘key = value’.
+            You can enter data using Cyrillic, Latin letters, or numbers. The = symbol must be present
+            between the key and the value. To select an item for deletion, click on it — it will be highlighted
+            in blue. Then click the “Delete” button to remove all highlighted items.
+            <br>
+            <button class="switch" id="uaSwitch">ua</button>
+        </div>
+    </div>
+</section>
+<script src="main.js"></script>
+</body>
+</html>
