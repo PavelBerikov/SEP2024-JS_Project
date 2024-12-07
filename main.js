@@ -39,7 +39,7 @@ addButton.addEventListener('click', (eu) => {
         const value = split[1] // второй елемент - значение
         data.push({name:name, value:value});
         creatorList();
-        addInput.value = '';
+        addInput.value = ''; //чистим инпут
     }
 
 });
@@ -48,7 +48,7 @@ addButton.addEventListener('click', (eu) => {
 sortByNameButton.addEventListener('click', () => {
     data.sort((a, b) => {
         const aName = isNaN(a.name) ? a.name :parseInt(a.name) //если значение может быть числом делаем его числом
-        const bName = isNaN(b.name) ? b.name : parseInt(b.name)//а если изНан возвращает тру, то так ее и сохраняем в переменную
+        const bName = isNaN(b.name) ? b.name : parseInt(b.name)//а если изНан возвращает тру, то в переменную сохраняем строку
         if (typeof aName === 'number' && typeof bName === 'string') {
             return -1 //если а - число б - строка то, а ставим перед б
         }
