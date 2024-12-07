@@ -1,5 +1,5 @@
 // ******* ХТМЛ элементы *********
-const addInput = document.getElementById('add');
+const addInput = document.getElementById('add')
 const addButton = document.getElementById('addButton');
 const listDiv = document.getElementById('list');
 const sortByNameButton = document.getElementById('sortName');
